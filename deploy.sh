@@ -18,7 +18,7 @@ git checkout $GIT_BRANCH
 
 # build static site
 echo "building with hugo"
-hugo
+hugo --cleanDestinationDir
 
 # sync src with dest
 echo "rsync $@"
